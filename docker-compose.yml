@@ -10,14 +10,14 @@ services:
       - "80:80"
 
   gbp_ws:
-    image: gbp_ws:latest
+    image: frostwyrm9x/gbp_ws:latest
     restart: always
     container_name: gbp_ws
     volumes:
       - ./ws/config.yaml:/app/config.yaml
 
   gbp_fe:
-    image: gbp_fe:prod
+    image: frostwyrm9x/gbp_fe:dev
     restart: always
     container_name: gbp_fe
 
